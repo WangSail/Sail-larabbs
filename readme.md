@@ -1,58 +1,37 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# 项目概述
 
-## About Laravel
+* 产品名称：LaraBBS
+* 项目代号：larabbs
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+LaraBBS 是一个简洁的论坛应用，使用 Laravel5.5 编写而成。
+![](https://dn-phphub.qbox.me/uploads/images/201711/01/1/xcr6ijTArV.png)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 功能如下
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
+- 用户认证 —— 注册、登录、退出；
+- 个人中心 —— 用户个人中心，编辑资料；
+- 用户授权 —— 作者才能删除自己的内容；
+- 上传图片 —— 修改头像和编辑话题时候上传图片；
+- 表单验证 —— 使用表单验证类；
+- 文章发布时自动 Slug 翻译，支持使用队列方式以提高响应；
+- 站点『活跃用户』计算，一小时计算一次；
+- 多角色权限管理 —— 允许站长，管理员权限的存在；
+- 后台管理 —— 后台数据模型管理；
+- 邮件通知 —— 发送新回复邮件通知，队列发送邮件；
+- 站内通知 —— 话题有新回复；
+- 自定义 Artisan 命令行 —— 自定义活跃用户计算命令；
+- 自定义 Trait —— 活跃用户的业务逻辑实现；
+- 自定义中间件 —— 记录用户的最后登录时间；
+- XSS 安全防御；
 
-## Learning Laravel
+## 运行环境要求
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- Nginx 1.8+
+- PHP 7.1+
+- Mysql 5.7+
+- Redis 3.0+
+- Memcached 1.4+
 
 ## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- The Laravel framework is open-sourced software licensed under the MIT license.
