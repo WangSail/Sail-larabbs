@@ -8350,6 +8350,24 @@ button.close {
   }
 }
 
+/* universal */
+
+body {
+  font-family: Hiragino Sans GB, "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial,sans-serif;
+}
+
+/* header */
+
+.navbar-static-top {
+  border-color: #e7e7e7;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 11px 2px rgba(42, 42, 42, 0.1);
+          box-shadow: 0px 1px 11px 2px rgba(42, 42, 42, 0.1);
+  border-top: 4px solid #00b5ad;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
 /* Sticky footer styles */
 
 html {
