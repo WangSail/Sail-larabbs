@@ -36,6 +36,7 @@ class User extends Authenticatable
     {
         return $this->id == $model->user_id;
     }
+    
     //一个用户可以拥有多条评论
     public function replies()
     {
